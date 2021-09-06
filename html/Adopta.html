@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopta</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/fontello.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/styles.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <h1 class="icon-paw">Patitas</h1>
+            <input type="checkbox" id="nav-bar">
+            <label class="icon-menu" for="nav-bar"></label>
+            <nav class="menu">
+                <ul class="lista-menu">
+                    <li> <a href="#"> Inicio</a> </li>
+                    <li> <a href="#"> Mascotas</a> </li>
+                    <li> <a href="#"> Contantos</a> </li>
+                    <li> <a href="#"> Blog</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br><br><br><br>
+    <main>
+        <div class="center form-1">
+            <form action="">
+                <label>
+                    <p>
+                        Nombre:
+                    </p>
+                    <input type="text" id="Nombre" value="">
+                </label>
+                <label>
+                    <p>
+                        Telefono:
+                    </p>
+                    <input type="number" id="Telefono">
+                </label>
+                <label>
+                    <p>
+                        Gmail:
+                    </p>
+                    <input type="email" id="Gmail">
+                </label>
+                <label>
+                    <p>
+                        Dirección:
+                    </p>
+                    <input type="text" id="Direccion">
+                </label>
+                <label>
+                    <p>
+                        Tipo de animal
+                    </p>
+                    <select id="Seleccion">
+                        <option value="No Selecciono">Seleccione</option>
+                        <option value="Perro">Perro</option>
+                        <option value="Gato">Gato</option>
+                        <option value="Loro">Loro</option>
+                    </select>
+                </label>
+                <br>
+                <input type="submit" value="ENVIAR" id="Enviar">
+                <input type="reset" value="REINICIAR" id="Reiniciar">
+            </form>
+        </div>
+        <br><br>
+        <div id="form-2" value="">Informacion</div>
+        <div class="notificacion">Mensaje</div>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <div>
+            <form action="../index.html" class="center" target="blank">
+                <input type="submit" onclick="Adopto()" value="Adoptar" id="Terminar">
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
